@@ -1,58 +1,66 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>SSZQ</title>
-    <link>sszq.github.io/</link>
-    <description>Recent content on SSZQ</description>
+    <title>Researcher</title>
+    <link>https://example.com/</link>
+    <description>Recent content on Researcher</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 17 Dec 2020 23:21:23 +0500</lastBuildDate>
+    <lastBuildDate>Thu, 17 Dec 2020 23:47:20 +0500</lastBuildDate>
     
-	<atom:link href="sszq.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Tmp1</title>
+      <link>https://example.com/posts/tmp1/</link>
+      <pubDate>Thu, 17 Dec 2020 23:47:20 +0500</pubDate>
+      
+      <guid>https://example.com/posts/tmp1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>123412</title>
-      <link>sszq.github.io/posts/123412/</link>
+      <link>https://example.com/posts/123412/</link>
       <pubDate>Thu, 17 Dec 2020 23:21:23 +0500</pubDate>
       
-      <guid>sszq.github.io/posts/123412/</guid>
+      <guid>https://example.com/posts/123412/</guid>
       <description>werlwj12421</description>
     </item>
     
     <item>
       <title>Three</title>
-      <link>sszq.github.io/posts/three/</link>
+      <link>https://example.com/posts/three/</link>
       <pubDate>Thu, 17 Dec 2020 23:17:00 +0500</pubDate>
       
-      <guid>sszq.github.io/posts/three/</guid>
+      <guid>https://example.com/posts/three/</guid>
       <description> 1234 2342 3421342 1234  </description>
     </item>
     
     <item>
       <title>Second</title>
-      <link>sszq.github.io/posts/second/</link>
+      <link>https://example.com/posts/second/</link>
       <pubDate>Thu, 17 Dec 2020 23:14:53 +0500</pubDate>
       
-      <guid>sszq.github.io/posts/second/</guid>
+      <guid>https://example.com/posts/second/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Game</title>
-      <link>sszq.github.io/posts/game/</link>
+      <link>https://example.com/posts/game/</link>
       <pubDate>Thu, 17 Dec 2020 23:05:50 +0500</pubDate>
       
-      <guid>sszq.github.io/posts/game/</guid>
+      <guid>https://example.com/posts/game/</guid>
       <description>kgasdgka</description>
     </item>
     
     <item>
       <title>My First Post</title>
-      <link>sszq.github.io/posts/my-first-post/</link>
+      <link>https://example.com/posts/my-first-post/</link>
       <pubDate>Thu, 17 Dec 2020 22:53:55 +0500</pubDate>
       
-      <guid>sszq.github.io/posts/my-first-post/</guid>
+      <guid>https://example.com/posts/my-first-post/</guid>
       <description>This my first page.</description>
     </item>
     
