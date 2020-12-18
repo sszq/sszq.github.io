@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tools on 清明自躬</title>
+    <link>/categories/tools/</link>
+    <description>Recent content in tools on 清明自躬</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 14 Dec 2020 09:55:07 +0500</lastBuildDate>
+    
+	<atom:link href="/categories/tools/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tmux</title>
+      <link>/post/tmux/</link>
+      <pubDate>Mon, 14 Dec 2020 09:55:07 +0500</pubDate>
+      
+      <guid>/post/tmux/</guid>
+      <description>tmux is a terminal multiplexer, and it can improve your work efficiency.
+For me, it has less two usefully features in my common work. Firstly, I can use it work in multi process; Secondly, I can store my work directory, even if I exit the terminal, next time I can also restore the session by tmux a -t &amp;lt;session-name&amp;gt;.
+ memory tips   All the first, know the structure information of tmux.</description>
+    </item>
+    
+    <item>
+      <title>Git Learning</title>
+      <link>/post/git-learning/</link>
+      <pubDate>Thu, 26 Nov 2020 09:55:49 +0500</pubDate>
+      
+      <guid>/post/git-learning/</guid>
+      <description>Learn from Git教程
+ 把知识串联起来 Git 设计层面的理解   repository
+中文为仓库，可以简单理解为一个目录，此目录下所有的文件都被git进行管理（包括每个文件的增删改，都会被git跟踪，以便随时查看与还原）
+  Git 关键词分析 了解 Git   什么是Git，有什么特点
+ 它是分布式版本控制系统，它由Linus两周写成    它为何而产生
+ 集中式版本控制系统太慢 商业的BitKeeper不再为Linux社区提供免费使用权    集中式与分布式的区别
+  集中式的特点
+ 版本库是集中放在中央服务器 必需联网才能工作（sszq: 这个特别感觉不是很明朗）    分布式的特别
+ 分布式没有中央服务器，每个使用者的电脑都是一个版本库 不需要联网      安装与配置 Git # 对于旧一点的Linux版本，以 apt instll git-core 命令进行安装，# 原因是有个软件（GNU Interactive Tools）先于git出现，占用了此命名。apt install git# 查看版本git verison# 设置个人标识，目的：在分布式系统下要让别人知道你为何是你# --global 参数目的：表示此机器上的所有Git repository都会使用此配置# 当然也可以对某个仓库指定特定的用户名与邮箱git config --global user.</description>
+    </item>
+    
+  </channel>
+</rss>

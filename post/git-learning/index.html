@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Git Learning - 清明自躬</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="Git Learning" />
+<meta property="og:description" content="Learn from Git教程
+ 把知识串联起来 Git 设计层面的理解   repository
+中文为仓库，可以简单理解为一个目录，此目录下所有的文件都被git进行管理（包括每个文件的增删改，都会被git跟踪，以便随时查看与还原）
+  Git 关键词分析 了解 Git   什么是Git，有什么特点
+ 它是分布式版本控制系统，它由Linus两周写成    它为何而产生
+ 集中式版本控制系统太慢 商业的BitKeeper不再为Linux社区提供免费使用权    集中式与分布式的区别
+  集中式的特点
+ 版本库是集中放在中央服务器 必需联网才能工作（sszq: 这个特别感觉不是很明朗）    分布式的特别
+ 分布式没有中央服务器，每个使用者的电脑都是一个版本库 不需要联网      安装与配置 Git # 对于旧一点的Linux版本，以 apt instll git-core 命令进行安装，# 原因是有个软件（GNU Interactive Tools）先于git出现，占用了此命名。apt install git# 查看版本git verison# 设置个人标识，目的：在分布式系统下要让别人知道你为何是你# --global 参数目的：表示此机器上的所有Git repository都会使用此配置# 当然也可以对某个仓库指定特定的用户名与邮箱git config --global user." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/git-learning/" />
+<meta property="article:published_time" content="2020-11-26T09:55:49+05:00" />
+<meta property="article:modified_time" content="2020-11-26T09:55:49+05:00" />
+
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Git Learning"/>
+<meta name="twitter:description" content="Learn from Git教程
+ 把知识串联起来 Git 设计层面的理解   repository
+中文为仓库，可以简单理解为一个目录，此目录下所有的文件都被git进行管理（包括每个文件的增删改，都会被git跟踪，以便随时查看与还原）
+  Git 关键词分析 了解 Git   什么是Git，有什么特点
+ 它是分布式版本控制系统，它由Linus两周写成    它为何而产生
+ 集中式版本控制系统太慢 商业的BitKeeper不再为Linux社区提供免费使用权    集中式与分布式的区别
+  集中式的特点
+ 版本库是集中放在中央服务器 必需联网才能工作（sszq: 这个特别感觉不是很明朗）    分布式的特别
+ 分布式没有中央服务器，每个使用者的电脑都是一个版本库 不需要联网      安装与配置 Git # 对于旧一点的Linux版本，以 apt instll git-core 命令进行安装，# 原因是有个软件（GNU Interactive Tools）先于git出现，占用了此命名。apt install git# 查看版本git verison# 设置个人标识，目的：在分布式系统下要让别人知道你为何是你# --global 参数目的：表示此机器上的所有Git repository都会使用此配置# 当然也可以对某个仓库指定特定的用户名与邮箱git config --global user."/>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" title="清明自躬" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">清明自躬</div>
+					<div class="logo__tagline">Follow your truth mind</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/post/migrate-from-jekyll/">
+				
+				<span class="menu__text">Jekyll migration</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/goisforlovers/">
+				
+				<span class="menu__text">(Hu)go Template Primer</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/about/">
+				
+				<span class="menu__text">About Hugo</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/hugoisforlovers/">
+				
+				<span class="menu__text">Getting Started with Hugo</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/tmux/">
+				
+				<span class="menu__text">Tmux</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Git Learning</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-11-26T09:55:49&#43;05:00">November 26, 2020</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/tools/" rel="category">tools</a>
+	</span>
+</div></div>
+		</header><div class="content post__content clearfix">
+			<blockquote>
+<p>Learn from <a href="https://www.liaoxuefeng.com/wiki/896043488029600">Git教程</a></p>
+</blockquote>
+<h3 id="把知识串联起来">把知识串联起来</h3>
+<h3 id="git-设计层面的理解">Git 设计层面的理解</h3>
+<ul>
+<li>
+<p>repository</p>
+<p>中文为仓库，可以简单理解为一个目录，此目录下所有的文件都被git进行管理（包括每个文件的增删改，都会被git跟踪，以便随时查看与还原）</p>
+</li>
+</ul>
+<h3 id="git-关键词分析">Git 关键词分析</h3>
+<h3 id="了解-git">了解 Git</h3>
+<ul>
+<li>
+<p>什么是Git，有什么特点</p>
+<ul>
+<li>它是分布式版本控制系统，它由Linus两周写成</li>
+</ul>
+</li>
+<li>
+<p>它为何而产生</p>
+<ul>
+<li>集中式版本控制系统太慢</li>
+<li>商业的BitKeeper不再为Linux社区提供免费使用权</li>
+</ul>
+</li>
+<li>
+<p>集中式与分布式的区别</p>
+<ul>
+<li>
+<p>集中式的特点</p>
+<ul>
+<li>版本库是集中放在中央服务器</li>
+<li>必需联网才能工作（sszq: 这个特别感觉不是很明朗）</li>
+</ul>
+</li>
+<li>
+<p>分布式的特别</p>
+<ul>
+<li>分布式没有中央服务器，每个使用者的电脑都是一个版本库</li>
+<li>不需要联网</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="安装与配置-git">安装与配置 Git</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># 对于旧一点的Linux版本，以 apt instll git-core 命令进行安装，</span>
+<span style="color:#75715e"># 原因是有个软件（GNU Interactive Tools）先于git出现，占用了此命名。</span>
+apt install git
+<span style="color:#75715e"># 查看版本</span>
+git verison
+<span style="color:#75715e"># 设置个人标识，目的：在分布式系统下要让别人知道你为何是你</span>
+<span style="color:#75715e"># --global 参数目的：表示此机器上的所有Git repository都会使用此配置</span>
+<span style="color:#75715e"># 当然也可以对某个仓库指定特定的用户名与邮箱</span>
+git config --global user.name <span style="color:#e6db74">&#34;sszq&#34;</span>
+git config --global user.email <span style="color:#e6db74">&#34;1004170070@qq.com&#34;</span>
+</code></pre></div><h3 id="创建版本库">创建版本库</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># 在一个目录下执行此命令，表示此目录开始被git管理</span>
+git init
+<span style="color:#75715e"># 把文件添加到版本库 Add files to version repository</span>
+git add readme.md
+<span style="color:#75715e"># you can do it by these other commands, add all files to version repository.</span>
+git add .
+git add --all
+<span style="color:#75715e"># commit files to local repository.</span>
+git commmit -m <span style="color:#e6db74">&#34;add readme file&#34;</span>
+</code></pre></div><h4 id="git-status-command-in-different-stages">git status command in different stages.</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">
+</code></pre></div><h4 id="git-diff-command">git diff command</h4>
+<blockquote>
+<p>you can run this command to compare the file content changes between had commit and now had modifyed before commit</p>
+</blockquote>
+<h3 id="version-back">version back</h3>
+<blockquote>
+<p>version back in different stages.</p>
+</blockquote>
+<h4 id="git-log-command">git log command</h4>
+<p><code>git log</code> show the commit log.</p>
+<p>pretty git log</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git log --pretty<span style="color:#f92672">=</span>oneline
+</code></pre></div><p>back to last version</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git reset --hard HEAD^
+</code></pre></div><p>if you want to the more versions, you can run above command though modify the HEAD~sequence, eg. back the last 100 version.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git reset --hard HEAD~100
+</code></pre></div><p>if you had executed this command, then you will not find the version that after this version in history.</p>
+<p><code>tips</code></p>
+<p>inner Git, has a point to finger the current version named HEAD. when you back version, just to make the HEAD finger the version you want to back.</p>
+<h4 id="git-reflog">git reflog</h4>
+<p>this command can record you every command.</p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/command/" rel="tag">command</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="清明自躬 avatar" src="/img/avatar.png" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About 清明自躬</span>
+	</div>
+	<div class="authorbox__description">
+		Just me John Doe&rsquo;s true identity is unknown. Maybe he is a successful blogger or writer. Nobody knows it.
+	</div>
+</div>
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/post/github-basic-command/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">Github Basic Command</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/post/learn-crawlers-record/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">Learn Crawlers Record</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<label>
+			<input class="widget-search__field" type="search" placeholder="SEARCH…" value="" name="q" aria-label="SEARCH…">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="/" />
+	</form>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/tmux/">Tmux</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/common-linux-command/">Common Linux Command</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/how-to-earn-money/">How to Earn Money</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/learn-crawlers-record/">Learn Crawlers Record</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/git-learning/">Git Learning</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/crawlers/">Crawlers</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/development/">Development</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/finance/">finance</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/golang/">golang</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/linux/">linux</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/read/">Read</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/self/">self</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/sql/">sql</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/tools/">tools</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/basic-elements/" title="Basic Elements">Basic Elements (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/command/" title="command">command (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/css/" title="CSS">CSS (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/development/" title="development">development (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/git/" title="git">git (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/go/" title="go">go (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/golang/" title="golang">golang (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/html/" title="HTML">HTML (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/httpclient/" title="httpclient">httpclient (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="hugo">hugo (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/oracle/" title="oracle">oracle (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/templates/" title="templates">templates (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/themes/" title="themes">themes (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/thindking/" title="thindking">thindking (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/thinking/" title="Thinking">Thinking (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/work/" title="work">work (1)</a>
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2020 清明自躬.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

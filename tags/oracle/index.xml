@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>oracle on 清明自躬</title>
+    <link>/tags/oracle/</link>
+    <description>Recent content in oracle on 清明自躬</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 15 Nov 2020 09:46:52 +0500</lastBuildDate>
+    
+	<atom:link href="/tags/oracle/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Oracle Again</title>
+      <link>/post/oracle-again/</link>
+      <pubDate>Sun, 15 Nov 2020 09:46:52 +0500</pubDate>
+      
+      <guid>/post/oracle-again/</guid>
+      <description>tablespace
+-- 创建表空间create tablespace user1 datafile &amp;#39;C:\app\oracle\oradata\maximo\user1_data.dbf&amp;#39; size 20M;-- 创建表空间，可扩展性create tablespace user2 datafile &amp;#39;C:\app\oracle\oradata\maximo\user2_data.dbf&amp;#39; size 100M autoextend on;-- 创建表空间，关闭自动扩展create tablespace user22 datafile &amp;#39;C:\app\oracle\oradata\maximo\user22_date.dbf&amp;#39; size 500M autoextend off;-- 指定数据文件的增长幅度create tablespace user3 datafile &amp;#39;C:\app\oracle\oradata\maximo\user3_data_dbf&amp;#39; size 20M autoextend on next 5M;-- 指定数据文件的最大容量create tablespace user4 datafile &amp;#39;C:\app\oracle\oradata\maximo\user4_data_dbf&amp;#39; size 20M autoextend on next 5M maxsize 500M;-- 指定数据文件的容量为不限制create tablespace user42 datafile &amp;#39;C:\app\oracle\oradata\maximo\user42_data_dbf&amp;#39; size 20M autoextend on next 5M maxsize unlimited;-- 为一个表空间创建多个数据文件create tablespace multiple_data_file datafile &amp;#39;C:\app\oracle\oradata\maximo\data_1.</description>
+    </item>
+    
+  </channel>
+</rss>

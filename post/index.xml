@@ -1,15 +1,129 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Mainroad</title>
+    <title>Posts on 清明自躬</title>
     <link>/post/</link>
-    <description>Recent content in Posts on Mainroad</description>
+    <description>Recent content in Posts on 清明自躬</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 14 Dec 2020 09:55:07 +0500</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Tmux</title>
+      <link>/post/tmux/</link>
+      <pubDate>Mon, 14 Dec 2020 09:55:07 +0500</pubDate>
+      
+      <guid>/post/tmux/</guid>
+      <description>tmux is a terminal multiplexer, and it can improve your work efficiency.
+For me, it has less two usefully features in my common work. Firstly, I can use it work in multi process; Secondly, I can store my work directory, even if I exit the terminal, next time I can also restore the session by tmux a -t &amp;lt;session-name&amp;gt;.
+ memory tips   All the first, know the structure information of tmux.</description>
+    </item>
+    
+    <item>
+      <title>Common Linux Command</title>
+      <link>/post/common-linux-command/</link>
+      <pubDate>Sun, 06 Dec 2020 09:53:04 +0500</pubDate>
+      
+      <guid>/post/common-linux-command/</guid>
+      <description> Linux commands category by the first letter of command.
+ A # 命令alias	[ei li e si]	别名apropos	[ai po pou]	恰当的aspell	放弃*awk	[ao ke]	笨拙的# 单词aptitus	[ai pu tei tui de]	才能[等同于apt]emerge	[i mo jay]	浮现[等同于apt]pacman	[pa ke man]	巴曼（越南）[等同于apt]yum	[ya mu]	美味的、极好的[等同于apt]B # 命令basenamebash	GUN Boume-Again SHellbc	echo &amp;#34;obase=2;sqrt(1024)&amp;#34; | bc echo &amp;#34;scale=2;8/3&amp;#34; | bcbg	ctrl+z to stop; from stop to start in bg; from stop to start to fg;builtin	[bei ou tin]	内建用户bzip2# 单词trip	[si tui pu]	脱衣、除去suffix	[se fei ke si]	后缀arbitrary	[a bei te rei]	任意的precision	[pe sei shen]	精确C cal	display a calendarcatcfdisk	partition table manipulator for linuxchgrp	change group ownershipchmod	change access permissionschown	change file owner and groupchroot	run a command with a different root directorychkconfig	system services(runlevel)cksum	print CRC checksum and byte countscmp	compare two filescomm	compare two sorted files line by linecommand	run a command - ignoring shell functionscron	daemon to execute scheduled commandscrontab	shedule a command to run at a later timecsplit	split a file into context-determined piecescut	divide a file into several parts# 单词concatenate	[kao en, kai tei nei te]	连结partition	[pa tei xin]	划分manipulator	[me nei piu lei te]	操纵器ownership	[ou ne xi pu]	所有权permission	允许，许可divide	[dei vai de]	分D datedc	desk calculatordd	convert and copy a file, write disk headers, boot recordsdeclare	declare variables and give them attributesdf	display free disk spacediff	difplay the differences between two filesdiff3	show differences among three filesdig	DNS lookupdir	briefly list directory contentsdircolors	colour setup fo &amp;#39;ls&amp;#39;dirname	convert a full pathname to just a pathdirs	display list of remembered directoriesdmesg	print kernel &amp;amp; driver messagesdu	Estimate file space usage# 单词briefly	[bu rei fu li]	简单的，简短的estimate [ai si tei mei te]	估计</description>
+    </item>
+    
+    <item>
+      <title>How to Earn Money</title>
+      <link>/post/how-to-earn-money/</link>
+      <pubDate>Sat, 05 Dec 2020 09:50:00 +0500</pubDate>
+      
+      <guid>/post/how-to-earn-money/</guid>
+      <description>Youtube channel  If you don&amp;rsquo;t have a stable income, you have no right to choose. If you want to have a try. First, you have to a bussiness, then find the product by this bussiness. Just follow the time and fushion.   Test about to show page.
+ </description>
+    </item>
+    
+    <item>
+      <title>Learn Crawlers Record</title>
+      <link>/post/learn-crawlers-record/</link>
+      <pubDate>Tue, 01 Dec 2020 09:43:37 +0500</pubDate>
+      
+      <guid>/post/learn-crawlers-record/</guid>
+      <description>示例，爬取京东手机价格信息 爬取京东手机价格信息 爬虫案例  取京东手机价格信息
+ SPU 与 SCU 的区别   SPU
+Strandard Product Unit 标准产品单位
+  SKU
+Stock Keeping Unit 库存量单位
+  报错记录 java.sql.SQLException: The server time zone value &#39;���Ǳ�׼ʱ��&#39; is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the &#39;serverTimezone&#39; configuration property) to use a more specific time zone value if you want to utilize time zone support.</description>
+    </item>
+    
+    <item>
+      <title>Git Learning</title>
+      <link>/post/git-learning/</link>
+      <pubDate>Thu, 26 Nov 2020 09:55:49 +0500</pubDate>
+      
+      <guid>/post/git-learning/</guid>
+      <description>Learn from Git教程
+ 把知识串联起来 Git 设计层面的理解   repository
+中文为仓库，可以简单理解为一个目录，此目录下所有的文件都被git进行管理（包括每个文件的增删改，都会被git跟踪，以便随时查看与还原）
+  Git 关键词分析 了解 Git   什么是Git，有什么特点
+ 它是分布式版本控制系统，它由Linus两周写成    它为何而产生
+ 集中式版本控制系统太慢 商业的BitKeeper不再为Linux社区提供免费使用权    集中式与分布式的区别
+  集中式的特点
+ 版本库是集中放在中央服务器 必需联网才能工作（sszq: 这个特别感觉不是很明朗）    分布式的特别
+ 分布式没有中央服务器，每个使用者的电脑都是一个版本库 不需要联网      安装与配置 Git # 对于旧一点的Linux版本，以 apt instll git-core 命令进行安装，# 原因是有个软件（GNU Interactive Tools）先于git出现，占用了此命名。apt install git# 查看版本git verison# 设置个人标识，目的：在分布式系统下要让别人知道你为何是你# --global 参数目的：表示此机器上的所有Git repository都会使用此配置# 当然也可以对某个仓库指定特定的用户名与邮箱git config --global user.</description>
+    </item>
+    
+    <item>
+      <title>Github Basic Command</title>
+      <link>/post/github-basic-command/</link>
+      <pubDate>Tue, 24 Nov 2020 09:53:46 +0500</pubDate>
+      
+      <guid>/post/github-basic-command/</guid>
+      <description>creae a empty repository in github what you want to upload to github generate a public key in localhost for connection to github
+# defaut click three enterssh-keygen -t -rsa -C &amp;#34;1004170070@qq.com&amp;#34;copy the file content named id_rsa.pub what crated by ssh-keygen command to github
+cat /mnt/c/User/Administrator/.ssh/id_rsa.pubverify the connectioin if is ok between localhost and github
+ssh -T git@github.comconfig you user info
+git config --global user.name &amp;#34;sszq&amp;#34;git config --global user.</description>
+    </item>
+    
+    <item>
+      <title>About Reader</title>
+      <link>/post/about-reader/</link>
+      <pubDate>Tue, 17 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/about-reader/</guid>
+      <description>关于读书
+以我来说，读书无非三种可能：
+ 获取知识 滋养品质 放纵强乐  书中自有颜如玉，放在哪种可能下都是没有问题的。
+人总是习惯而又不察的沉湎于无尽空虚之中，在心性没有成熟之前，没有一套自己的思想价值观念。在物欲面前，个人的执守就是一委黄沙，经不起风吹雨打，终于支离散尽。
+在没有思想支撑时，要时刻保持警醒，就相信一件事，那就是多做事。用无尽的事务来填充这不期而来的无尽空虚，以先入为主的姿态来迎拒这实力悬殊的空虚的侵袭。读书自来就是一件来化解这干戈的好作为，义理裹腹，盛名之下，不战而屈人之兵，是最好的生存形态了。
+任何事，开始时，都是最难的，最让人焦灼，同时也是最提炼品质的，最让人铭于怀的。</description>
+    </item>
+    
+    <item>
+      <title>Oracle Again</title>
+      <link>/post/oracle-again/</link>
+      <pubDate>Sun, 15 Nov 2020 09:46:52 +0500</pubDate>
+      
+      <guid>/post/oracle-again/</guid>
+      <description>tablespace
+-- 创建表空间create tablespace user1 datafile &amp;#39;C:\app\oracle\oradata\maximo\user1_data.dbf&amp;#39; size 20M;-- 创建表空间，可扩展性create tablespace user2 datafile &amp;#39;C:\app\oracle\oradata\maximo\user2_data.dbf&amp;#39; size 100M autoextend on;-- 创建表空间，关闭自动扩展create tablespace user22 datafile &amp;#39;C:\app\oracle\oradata\maximo\user22_date.dbf&amp;#39; size 500M autoextend off;-- 指定数据文件的增长幅度create tablespace user3 datafile &amp;#39;C:\app\oracle\oradata\maximo\user3_data_dbf&amp;#39; size 20M autoextend on next 5M;-- 指定数据文件的最大容量create tablespace user4 datafile &amp;#39;C:\app\oracle\oradata\maximo\user4_data_dbf&amp;#39; size 20M autoextend on next 5M maxsize 500M;-- 指定数据文件的容量为不限制create tablespace user42 datafile &amp;#39;C:\app\oracle\oradata\maximo\user42_data_dbf&amp;#39; size 20M autoextend on next 5M maxsize unlimited;-- 为一个表空间创建多个数据文件create tablespace multiple_data_file datafile &amp;#39;C:\app\oracle\oradata\maximo\data_1.</description>
+    </item>
+    
+    <item>
+      <title>Record Recent</title>
+      <link>/post/record-recent/</link>
+      <pubDate>Wed, 11 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/record-recent/</guid>
+      <description>最近的氛围有点奇怪，被羲和厌恶，又会厌恶不为此被句所主导的人。
+昨天发了工资，工作以来到手最多的一次，当然是加上工资条里少算的一部分。
+每天工作之后精神与身体都会疲乏，工作多少却不相关拿多少酬劳。
+在学习，为了跳槽，其实是为了羲和与我。人近而立，身不由己。
+项目上的事还好吧，当下环境不允许你遇到大奸大恶，但总有些沙砾会磨在眼睛，好在人有情绪可以幽怨，还可排遣。
+不是同路的人，接触久了，交往细节自会勾勒这真实面目，自私、轻视、尸位、排挤。是自己不争取，还是一直边缘人，难道是想得太多，更应该自己支配思想做些有用的功课。
+当前工作的技术成分，八成是经验来担当。这些经验网上少见，不被外放。同一个团队，工作中也会对你是这样，是生于职场忧患么，只号令搬砖，不明细此劳力的来由，可见工具人才会让私心安乐。</description>
+    </item>
     
     <item>
       <title>Basic HTML Elements</title>

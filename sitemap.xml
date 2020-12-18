@@ -3,17 +3,142 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/categories/</loc>
+    <lastmod>2020-12-14T09:55:07+05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/command/</loc>
+    <lastmod>2020-12-14T09:55:07+05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2020-12-14T09:55:07+05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-12-14T09:55:07+05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/tmux/</loc>
+    <lastmod>2020-12-14T09:55:07+05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/tools/</loc>
+    <lastmod>2020-12-14T09:55:07+05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/common-linux-command/</loc>
+    <lastmod>2020-12-06T09:53:04+05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/linux/</loc>
+    <lastmod>2020-12-06T09:53:04+05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/finance/</loc>
+    <lastmod>2020-12-05T09:50:00+05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/how-to-earn-money/</loc>
+    <lastmod>2020-12-05T09:50:00+05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/crawlers/</loc>
+    <lastmod>2020-12-01T09:43:37+05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/httpclient/</loc>
+    <lastmod>2020-12-01T09:43:37+05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/learn-crawlers-record/</loc>
+    <lastmod>2020-12-01T09:43:37+05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/git-learning/</loc>
+    <lastmod>2020-11-26T09:55:49+05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/git/</loc>
+    <lastmod>2020-11-24T09:53:46+05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/github-basic-command/</loc>
+    <lastmod>2020-11-24T09:53:46+05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/about-reader/</loc>
+    <lastmod>2020-11-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/read/</loc>
+    <lastmod>2020-11-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/thinking/</loc>
+    <lastmod>2020-11-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/oracle/</loc>
+    <lastmod>2020-11-15T09:46:52+05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/oracle-again/</loc>
+    <lastmod>2020-11-15T09:46:52+05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/sql/</loc>
+    <lastmod>2020-11-15T09:46:52+05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/record-recent/</loc>
+    <lastmod>2020-11-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/self/</loc>
+    <lastmod>2020-11-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/thindking/</loc>
+    <lastmod>2020-11-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/work/</loc>
+    <lastmod>2020-11-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/basic-elements/</loc>
     <lastmod>2018-04-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/post/basic-elements/</loc>
-    <lastmod>2018-04-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/</loc>
     <lastmod>2018-04-16T00:00:00+00:00</lastmod>
   </url>
   
@@ -29,16 +154,6 @@
   
   <url>
     <loc>/tags/html/</loc>
-    <lastmod>2018-04-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
-    <lastmod>2018-04-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2018-04-16T00:00:00+00:00</lastmod>
   </url>
   

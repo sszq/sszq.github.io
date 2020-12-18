@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on 清明自躬</title>
+    <link>/categories/linux/</link>
+    <description>Recent content in linux on 清明自躬</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 06 Dec 2020 09:53:04 +0500</lastBuildDate>
+    
+	<atom:link href="/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Common Linux Command</title>
+      <link>/post/common-linux-command/</link>
+      <pubDate>Sun, 06 Dec 2020 09:53:04 +0500</pubDate>
+      
+      <guid>/post/common-linux-command/</guid>
+      <description> Linux commands category by the first letter of command.
+ A # 命令alias	[ei li e si]	别名apropos	[ai po pou]	恰当的aspell	放弃*awk	[ao ke]	笨拙的# 单词aptitus	[ai pu tei tui de]	才能[等同于apt]emerge	[i mo jay]	浮现[等同于apt]pacman	[pa ke man]	巴曼（越南）[等同于apt]yum	[ya mu]	美味的、极好的[等同于apt]B # 命令basenamebash	GUN Boume-Again SHellbc	echo &amp;#34;obase=2;sqrt(1024)&amp;#34; | bc echo &amp;#34;scale=2;8/3&amp;#34; | bcbg	ctrl+z to stop; from stop to start in bg; from stop to start to fg;builtin	[bei ou tin]	内建用户bzip2# 单词trip	[si tui pu]	脱衣、除去suffix	[se fei ke si]	后缀arbitrary	[a bei te rei]	任意的precision	[pe sei shen]	精确C cal	display a calendarcatcfdisk	partition table manipulator for linuxchgrp	change group ownershipchmod	change access permissionschown	change file owner and groupchroot	run a command with a different root directorychkconfig	system services(runlevel)cksum	print CRC checksum and byte countscmp	compare two filescomm	compare two sorted files line by linecommand	run a command - ignoring shell functionscron	daemon to execute scheduled commandscrontab	shedule a command to run at a later timecsplit	split a file into context-determined piecescut	divide a file into several parts# 单词concatenate	[kao en, kai tei nei te]	连结partition	[pa tei xin]	划分manipulator	[me nei piu lei te]	操纵器ownership	[ou ne xi pu]	所有权permission	允许，许可divide	[dei vai de]	分D datedc	desk calculatordd	convert and copy a file, write disk headers, boot recordsdeclare	declare variables and give them attributesdf	display free disk spacediff	difplay the differences between two filesdiff3	show differences among three filesdig	DNS lookupdir	briefly list directory contentsdircolors	colour setup fo &amp;#39;ls&amp;#39;dirname	convert a full pathname to just a pathdirs	display list of remembered directoriesdmesg	print kernel &amp;amp; driver messagesdu	Estimate file space usage# 单词briefly	[bu rei fu li]	简单的，简短的estimate [ai si tei mei te]	估计</description>
+    </item>
+    
+  </channel>
+</rss>

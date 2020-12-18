@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Crawlers on 清明自躬</title>
+    <link>/categories/crawlers/</link>
+    <description>Recent content in Crawlers on 清明自躬</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 Dec 2020 09:43:37 +0500</lastBuildDate>
+    
+	<atom:link href="/categories/crawlers/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Learn Crawlers Record</title>
+      <link>/post/learn-crawlers-record/</link>
+      <pubDate>Tue, 01 Dec 2020 09:43:37 +0500</pubDate>
+      
+      <guid>/post/learn-crawlers-record/</guid>
+      <description>示例，爬取京东手机价格信息 爬取京东手机价格信息 爬虫案例  取京东手机价格信息
+ SPU 与 SCU 的区别   SPU
+Strandard Product Unit 标准产品单位
+  SKU
+Stock Keeping Unit 库存量单位
+  报错记录 java.sql.SQLException: The server time zone value &#39;���Ǳ�׼ʱ��&#39; is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the &#39;serverTimezone&#39; configuration property) to use a more specific time zone value if you want to utilize time zone support.</description>
+    </item>
+    
+  </channel>
+</rss>

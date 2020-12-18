@@ -1,15 +1,78 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Mainroad</title>
+    <title>Tags on 清明自躬</title>
     <link>/tags/</link>
-    <description>Recent content in Tags on Mainroad</description>
+    <description>Recent content in Tags on 清明自躬</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 14 Dec 2020 09:55:07 +0500</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>command</title>
+      <link>/tags/command/</link>
+      <pubDate>Mon, 14 Dec 2020 09:55:07 +0500</pubDate>
+      
+      <guid>/tags/command/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>httpclient</title>
+      <link>/tags/httpclient/</link>
+      <pubDate>Tue, 01 Dec 2020 09:43:37 +0500</pubDate>
+      
+      <guid>/tags/httpclient/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>git</title>
+      <link>/tags/git/</link>
+      <pubDate>Tue, 24 Nov 2020 09:53:46 +0500</pubDate>
+      
+      <guid>/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Thinking</title>
+      <link>/tags/thinking/</link>
+      <pubDate>Tue, 17 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/thinking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>oracle</title>
+      <link>/tags/oracle/</link>
+      <pubDate>Sun, 15 Nov 2020 09:46:52 +0500</pubDate>
+      
+      <guid>/tags/oracle/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>thindking</title>
+      <link>/tags/thindking/</link>
+      <pubDate>Wed, 11 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/thindking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>work</title>
+      <link>/tags/work/</link>
+      <pubDate>Wed, 11 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/work/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Basic Elements</title>

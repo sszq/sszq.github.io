@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>command on 清明自躬</title>
+    <link>/tags/command/</link>
+    <description>Recent content in command on 清明自躬</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 14 Dec 2020 09:55:07 +0500</lastBuildDate>
+    
+	<atom:link href="/tags/command/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tmux</title>
+      <link>/post/tmux/</link>
+      <pubDate>Mon, 14 Dec 2020 09:55:07 +0500</pubDate>
+      
+      <guid>/post/tmux/</guid>
+      <description>tmux is a terminal multiplexer, and it can improve your work efficiency.
+For me, it has less two usefully features in my common work. Firstly, I can use it work in multi process; Secondly, I can store my work directory, even if I exit the terminal, next time I can also restore the session by tmux a -t &amp;lt;session-name&amp;gt;.
+ memory tips   All the first, know the structure information of tmux.</description>
+    </item>
+    
+    <item>
+      <title>Common Linux Command</title>
+      <link>/post/common-linux-command/</link>
+      <pubDate>Sun, 06 Dec 2020 09:53:04 +0500</pubDate>
+      
+      <guid>/post/common-linux-command/</guid>
+      <description> Linux commands category by the first letter of command.
+ A # 命令alias	[ei li e si]	别名apropos	[ai po pou]	恰当的aspell	放弃*awk	[ao ke]	笨拙的# 单词aptitus	[ai pu tei tui de]	才能[等同于apt]emerge	[i mo jay]	浮现[等同于apt]pacman	[pa ke man]	巴曼（越南）[等同于apt]yum	[ya mu]	美味的、极好的[等同于apt]B # 命令basenamebash	GUN Boume-Again SHellbc	echo &amp;#34;obase=2;sqrt(1024)&amp;#34; | bc echo &amp;#34;scale=2;8/3&amp;#34; | bcbg	ctrl+z to stop; from stop to start in bg; from stop to start to fg;builtin	[bei ou tin]	内建用户bzip2# 单词trip	[si tui pu]	脱衣、除去suffix	[se fei ke si]	后缀arbitrary	[a bei te rei]	任意的precision	[pe sei shen]	精确C cal	display a calendarcatcfdisk	partition table manipulator for linuxchgrp	change group ownershipchmod	change access permissionschown	change file owner and groupchroot	run a command with a different root directorychkconfig	system services(runlevel)cksum	print CRC checksum and byte countscmp	compare two filescomm	compare two sorted files line by linecommand	run a command - ignoring shell functionscron	daemon to execute scheduled commandscrontab	shedule a command to run at a later timecsplit	split a file into context-determined piecescut	divide a file into several parts# 单词concatenate	[kao en, kai tei nei te]	连结partition	[pa tei xin]	划分manipulator	[me nei piu lei te]	操纵器ownership	[ou ne xi pu]	所有权permission	允许，许可divide	[dei vai de]	分D datedc	desk calculatordd	convert and copy a file, write disk headers, boot recordsdeclare	declare variables and give them attributesdf	display free disk spacediff	difplay the differences between two filesdiff3	show differences among three filesdig	DNS lookupdir	briefly list directory contentsdircolors	colour setup fo &amp;#39;ls&amp;#39;dirname	convert a full pathname to just a pathdirs	display list of remembered directoriesdmesg	print kernel &amp;amp; driver messagesdu	Estimate file space usage# 单词briefly	[bu rei fu li]	简单的，简短的estimate [ai si tei mei te]	估计</description>
+    </item>
+    
+    <item>
+      <title>Git Learning</title>
+      <link>/post/git-learning/</link>
+      <pubDate>Thu, 26 Nov 2020 09:55:49 +0500</pubDate>
+      
+      <guid>/post/git-learning/</guid>
+      <description>Learn from Git教程
+ 把知识串联起来 Git 设计层面的理解   repository
+中文为仓库，可以简单理解为一个目录，此目录下所有的文件都被git进行管理（包括每个文件的增删改，都会被git跟踪，以便随时查看与还原）
+  Git 关键词分析 了解 Git   什么是Git，有什么特点
+ 它是分布式版本控制系统，它由Linus两周写成    它为何而产生
+ 集中式版本控制系统太慢 商业的BitKeeper不再为Linux社区提供免费使用权    集中式与分布式的区别
+  集中式的特点
+ 版本库是集中放在中央服务器 必需联网才能工作（sszq: 这个特别感觉不是很明朗）    分布式的特别
+ 分布式没有中央服务器，每个使用者的电脑都是一个版本库 不需要联网      安装与配置 Git # 对于旧一点的Linux版本，以 apt instll git-core 命令进行安装，# 原因是有个软件（GNU Interactive Tools）先于git出现，占用了此命名。apt install git# 查看版本git verison# 设置个人标识，目的：在分布式系统下要让别人知道你为何是你# --global 参数目的：表示此机器上的所有Git repository都会使用此配置# 当然也可以对某个仓库指定特定的用户名与邮箱git config --global user.</description>
+    </item>
+    
+  </channel>
+</rss>
