@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>read on 清明自躬</title>
+    <link>/tags/read/</link>
+    <description>Recent content in read on 清明自躬</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 17 Nov 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/read/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About Reader</title>
+      <link>/post/about-reader/</link>
+      <pubDate>Tue, 17 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/about-reader/</guid>
+      <description>关于读书
+以我来说，读书无非三种可能：
+ 获取知识 滋养品质 放纵强乐  书中自有颜如玉，放在哪种可能下都是没有问题的。
+人总是习惯而又不察的沉湎于无尽空虚之中，在心性没有成熟之前，没有一套自己的思想价值观念。在物欲面前，个人的执守就是一委黄沙，经不起风吹雨打，终于支离散尽。
+在没有思想支撑时，要时刻保持警醒，就相信一件事，那就是多做事。用无尽的事务来填充这不期而来的无尽空虚，以先入为主的姿态来迎拒这实力悬殊的空虚的侵袭。读书自来就是一件来化解这干戈的好作为，义理裹腹，盛名之下，不战而屈人之兵，是最好的生存形态了。
+任何事，开始时，都是最难的，最让人焦灼，同时也是最提炼品质的，最让人铭于怀的。</description>
+    </item>
+    
+  </channel>
+</rss>

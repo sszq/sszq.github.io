@@ -6,10 +6,27 @@
     <description>Recent content in git on 清明自躬</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Nov 2020 09:53:46 +0500</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2020 09:55:49 +0500</lastBuildDate>
     
 	<atom:link href="/tags/git/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Git Learning</title>
+      <link>/post/git-learning/</link>
+      <pubDate>Thu, 26 Nov 2020 09:55:49 +0500</pubDate>
+      
+      <guid>/post/git-learning/</guid>
+      <description>Learn from Git教程
+ 把知识串联起来 Git 设计层面的理解   repository
+中文为仓库，可以简单理解为一个目录，此目录下所有的文件都被git进行管理（包括每个文件的增删改，都会被git跟踪，以便随时查看与还原）
+  Git 关键词分析 了解 Git   什么是Git，有什么特点
+ 它是分布式版本控制系统，它由Linus两周写成    它为何而产生
+ 集中式版本控制系统太慢 商业的BitKeeper不再为Linux社区提供免费使用权    集中式与分布式的区别
+  集中式的特点
+ 版本库是集中放在中央服务器 必需联网才能工作（sszq: 这个特别感觉不是很明朗）    分布式的特别
+ 分布式没有中央服务器，每个使用者的电脑都是一个版本库 不需要联网      安装与配置 Git # 对于旧一点的Linux版本，以 apt instll git-core 命令进行安装，# 原因是有个软件（GNU Interactive Tools）先于git出现，占用了此命名。apt install git# 查看版本git verison# 设置个人标识，目的：在分布式系统下要让别人知道你为何是你# --global 参数目的：表示此机器上的所有Git repository都会使用此配置# 当然也可以对某个仓库指定特定的用户名与邮箱git config --global user.</description>
+    </item>
     
     <item>
       <title>Github Basic Command</title>

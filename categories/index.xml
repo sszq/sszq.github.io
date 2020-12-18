@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>tools</title>
+      <title>Tools</title>
       <link>/categories/tools/</link>
       <pubDate>Mon, 14 Dec 2020 09:55:07 +0500</pubDate>
       
@@ -21,7 +21,7 @@
     </item>
     
     <item>
-      <title>linux</title>
+      <title>Linux</title>
       <link>/categories/linux/</link>
       <pubDate>Sun, 06 Dec 2020 09:53:04 +0500</pubDate>
       
@@ -30,34 +30,25 @@
     </item>
     
     <item>
-      <title>finance</title>
-      <link>/categories/finance/</link>
-      <pubDate>Sat, 05 Dec 2020 09:50:00 +0500</pubDate>
-      
-      <guid>/categories/finance/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Crawlers</title>
-      <link>/categories/crawlers/</link>
+      <title>Java</title>
+      <link>/categories/java/</link>
       <pubDate>Tue, 01 Dec 2020 09:43:37 +0500</pubDate>
       
-      <guid>/categories/crawlers/</guid>
+      <guid>/categories/java/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Read</title>
-      <link>/categories/read/</link>
+      <title>Thinking</title>
+      <link>/categories/thinking/</link>
       <pubDate>Tue, 17 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>/categories/read/</guid>
+      <guid>/categories/thinking/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>sql</title>
+      <title>SQL</title>
       <link>/categories/sql/</link>
       <pubDate>Sun, 15 Nov 2020 09:46:52 +0500</pubDate>
       
@@ -66,7 +57,7 @@
     </item>
     
     <item>
-      <title>self</title>
+      <title>Self</title>
       <link>/categories/self/</link>
       <pubDate>Wed, 11 Nov 2020 00:00:00 +0000</pubDate>
       

@@ -21,29 +21,38 @@
     </item>
     
     <item>
-      <title>httpclient</title>
-      <link>/tags/httpclient/</link>
+      <title>finance</title>
+      <link>/tags/finance/</link>
+      <pubDate>Sat, 05 Dec 2020 09:50:00 +0500</pubDate>
+      
+      <guid>/tags/finance/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Crawlers</title>
+      <link>/tags/crawlers/</link>
       <pubDate>Tue, 01 Dec 2020 09:43:37 +0500</pubDate>
       
-      <guid>/tags/httpclient/</guid>
+      <guid>/tags/crawlers/</guid>
       <description></description>
     </item>
     
     <item>
       <title>git</title>
       <link>/tags/git/</link>
-      <pubDate>Tue, 24 Nov 2020 09:53:46 +0500</pubDate>
+      <pubDate>Thu, 26 Nov 2020 09:55:49 +0500</pubDate>
       
       <guid>/tags/git/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Thinking</title>
-      <link>/tags/thinking/</link>
+      <title>read</title>
+      <link>/tags/read/</link>
       <pubDate>Tue, 17 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/thinking/</guid>
+      <guid>/tags/read/</guid>
       <description></description>
     </item>
     

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>tools on 清明自躬</title>
+    <title>Tools on 清明自躬</title>
     <link>/categories/tools/</link>
-    <description>Recent content in tools on 清明自躬</description>
+    <description>Recent content in Tools on 清明自躬</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 14 Dec 2020 09:55:07 +0500</lastBuildDate>
@@ -37,6 +37,19 @@ For me, it has less two usefully features in my common work. Firstly, I can use 
   集中式的特点
  版本库是集中放在中央服务器 必需联网才能工作（sszq: 这个特别感觉不是很明朗）    分布式的特别
  分布式没有中央服务器，每个使用者的电脑都是一个版本库 不需要联网      安装与配置 Git # 对于旧一点的Linux版本，以 apt instll git-core 命令进行安装，# 原因是有个软件（GNU Interactive Tools）先于git出现，占用了此命名。apt install git# 查看版本git verison# 设置个人标识，目的：在分布式系统下要让别人知道你为何是你# --global 参数目的：表示此机器上的所有Git repository都会使用此配置# 当然也可以对某个仓库指定特定的用户名与邮箱git config --global user.</description>
+    </item>
+    
+    <item>
+      <title>Github Basic Command</title>
+      <link>/post/github-basic-command/</link>
+      <pubDate>Tue, 24 Nov 2020 09:53:46 +0500</pubDate>
+      
+      <guid>/post/github-basic-command/</guid>
+      <description>creae a empty repository in github what you want to upload to github generate a public key in localhost for connection to github
+# defaut click three enterssh-keygen -t -rsa -C &amp;#34;1004170070@qq.com&amp;#34;copy the file content named id_rsa.pub what crated by ssh-keygen command to github
+cat /mnt/c/User/Administrator/.ssh/id_rsa.pubverify the connectioin if is ok between localhost and github
+ssh -T git@github.comconfig you user info
+git config --global user.name &amp;#34;sszq&amp;#34;git config --global user.</description>
     </item>
     
   </channel>
