@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Java on 清明自躬</title>
-    <link>/categories/java/</link>
-    <description>Recent content in Java on 清明自躬</description>
+    <title>maximo on 清明自躬</title>
+    <link>/tags/maximo/</link>
+    <description>Recent content in maximo on 清明自躬</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 29 Dec 2020 12:28:46 +0500</lastBuildDate>
     
-	<atom:link href="/categories/java/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/maximo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,20 +20,6 @@
       <description>Recently, I statill develop in current project, I selved sevrial issue about override method. I plan to record them now.
  Purchase receives In purchase receives application, user can new, receive, return material. In bussiness, user can do these actions only on the purchase approve status is APPR, so if the status is not APPR, when user do that, throuth system notice user can&amp;rsquo;t do that.
 Firstly, the recievts line table binding a table class, and the receive, return action is in this method, now I can create a new class and override the two method.</description>
-    </item>
-    
-    <item>
-      <title>Learn Crawlers Record</title>
-      <link>/post/learn-crawlers-record/</link>
-      <pubDate>Tue, 01 Dec 2020 09:43:37 +0500</pubDate>
-      
-      <guid>/post/learn-crawlers-record/</guid>
-      <description>示例，爬取京东手机价格信息 爬取京东手机价格信息 爬虫案例  取京东手机价格信息
- SPU 与 SCU 的区别   SPU
-Strandard Product Unit 标准产品单位
-  SKU
-Stock Keeping Unit 库存量单位
-  报错记录 java.sql.SQLException: The server time zone value &#39;���Ǳ�׼ʱ��&#39; is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the &#39;serverTimezone&#39; configuration property) to use a more specific time zone value if you want to utilize time zone support.</description>
     </item>
     
   </channel>

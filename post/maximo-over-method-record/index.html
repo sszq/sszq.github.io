@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Maximo Over Method Record - 清明自躬</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="Maximo Over Method Record" />
+<meta property="og:description" content="Recently, I statill develop in current project, I selved sevrial issue about override method. I plan to record them now.
+ Purchase receives In purchase receives application, user can new, receive, return material. In bussiness, user can do these actions only on the purchase approve status is APPR, so if the status is not APPR, when user do that, throuth system notice user can&rsquo;t do that.
+Firstly, the recievts line table binding a table class, and the receive, return action is in this method, now I can create a new class and override the two method." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/maximo-over-method-record/" />
+<meta property="article:published_time" content="2020-12-29T12:28:46+05:00" />
+<meta property="article:modified_time" content="2020-12-29T12:28:46+05:00" />
+
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Maximo Over Method Record"/>
+<meta name="twitter:description" content="Recently, I statill develop in current project, I selved sevrial issue about override method. I plan to record them now.
+ Purchase receives In purchase receives application, user can new, receive, return material. In bussiness, user can do these actions only on the purchase approve status is APPR, so if the status is not APPR, when user do that, throuth system notice user can&rsquo;t do that.
+Firstly, the recievts line table binding a table class, and the receive, return action is in this method, now I can create a new class and override the two method."/>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" title="清明自躬" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">清明自躬</div>
+					<div class="logo__tagline">Follow your truth mind</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/post/migrate-from-jekyll/">
+				
+				<span class="menu__text">Jekyll migration</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/goisforlovers/">
+				
+				<span class="menu__text">(Hu)go Template Primer</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/about/">
+				
+				<span class="menu__text">About Hugo</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/hugoisforlovers/">
+				
+				<span class="menu__text">Getting Started with Hugo</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Maximo Over Method Record</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-12-29T12:28:46&#43;05:00">December 29, 2020</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/java/" rel="category">Java</a>
+	</span>
+</div></div>
+		</header><div class="content post__content clearfix">
+			<blockquote>
+<p>Recently, I statill develop in current project, I selved sevrial issue about override method. I plan to record them now.</p>
+</blockquote>
+<h4 id="purchase-receives">Purchase receives</h4>
+<p>In purchase receives application, user can new, receive, return material. In bussiness, user can do these actions only on the purchase approve status is <code>APPR</code>, so if the status is not <code>APPR</code>, when user do that, throuth system notice user can&rsquo;t do that.</p>
+<p>Firstly, the recievts line table binding a table class, and the <code>receive</code>, <code>return</code> action is in this method, now I can create a new class and override the two method.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> hxqh.webclient.beans.receipts<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.rmi.RemoteException<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> hxqh.app.common.UdAtgUtil<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> psdi.mbo.MboRemote<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> psdi.util.MXApplicationException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> psdi.util.MXException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> psdi.webclient.beans.receipts.ReceiptsTableBean<span style="color:#f92672">;</span>
+
+<span style="color:#75715e">/**
+</span><span style="color:#75715e"> * @moduleApp .: 6.6 采购接收
+</span><span style="color:#75715e"> * @classPath .: hxqh.webclient.beans.receipts.UdReceiptsTableBean
+</span><span style="color:#75715e"> * @description: 当用户接收或退回物资时，判断采购接收的审批状态是否为APPR，如果不是，不允许进行对应操作
+</span><span style="color:#75715e"> * 				!!! 此功能暂时用不到，文件保留
+</span><span style="color:#75715e"> * @author ....: WangQk
+</span><span style="color:#75715e"> * @date ......: 2020/12/28
+</span><span style="color:#75715e"> */</span>
+<span style="color:#a6e22e">@Deprecated</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">UdReceiptsTableBean</span> <span style="color:#66d9ef">extends</span> ReceiptsTableBean <span style="color:#f92672">{</span>
+	
+	<span style="color:#a6e22e">@Override</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">itemreturn</span><span style="color:#f92672">()</span> <span style="color:#66d9ef">throws</span> MXException<span style="color:#f92672">,</span> RemoteException <span style="color:#f92672">{</span>
+		
+		MboRemote mbo <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">parent</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getMbo</span><span style="color:#f92672">();</span>
+		<span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">null</span> <span style="color:#f92672">!=</span> mbo<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+			String appName <span style="color:#f92672">=</span> mbo<span style="color:#f92672">.</span><span style="color:#a6e22e">getThisMboSet</span><span style="color:#f92672">().</span><span style="color:#a6e22e">getApp</span><span style="color:#f92672">();</span>
+			UdAtgUtil<span style="color:#f92672">.</span><span style="color:#a6e22e">print</span><span style="color:#f92672">(</span>getClass<span style="color:#f92672">(),</span> <span style="color:#e6db74">&#34;itemreturn&#34;</span><span style="color:#f92672">,</span> appName<span style="color:#f92672">);</span>
+			<span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span><span style="color:#e6db74">&#34;RECEIPTS&#34;</span><span style="color:#f92672">.</span><span style="color:#a6e22e">equalsIgnoreCase</span><span style="color:#f92672">(</span>appName<span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+				String status <span style="color:#f92672">=</span> mbo<span style="color:#f92672">.</span><span style="color:#a6e22e">getString</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;udStatus&#34;</span><span style="color:#f92672">);</span>
+				<span style="color:#66d9ef">if</span> <span style="color:#f92672">(!</span><span style="color:#e6db74">&#34;APPR&#34;</span><span style="color:#f92672">.</span><span style="color:#a6e22e">equals</span><span style="color:#f92672">(</span>status<span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+					<span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> MXApplicationException<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;receipts&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;statusAppr&#34;</span><span style="color:#f92672">);</span>
+				<span style="color:#f92672">}</span>
+			<span style="color:#f92672">}</span>
+		<span style="color:#f92672">}</span>
+
+		<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">super</span><span style="color:#f92672">.</span><span style="color:#a6e22e">itemreturn</span><span style="color:#f92672">();</span>
+	<span style="color:#f92672">}</span>
+	
+	<span style="color:#a6e22e">@Override</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">selorditem</span><span style="color:#f92672">()</span> <span style="color:#66d9ef">throws</span> MXException<span style="color:#f92672">,</span> RemoteException <span style="color:#f92672">{</span>
+		MboRemote mbo <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">parent</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getMbo</span><span style="color:#f92672">();</span>
+		<span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">null</span> <span style="color:#f92672">!=</span> mbo<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+			String appName <span style="color:#f92672">=</span> mbo<span style="color:#f92672">.</span><span style="color:#a6e22e">getThisMboSet</span><span style="color:#f92672">().</span><span style="color:#a6e22e">getApp</span><span style="color:#f92672">();</span>
+			UdAtgUtil<span style="color:#f92672">.</span><span style="color:#a6e22e">print</span><span style="color:#f92672">(</span>getClass<span style="color:#f92672">(),</span> <span style="color:#e6db74">&#34;selorditem&#34;</span><span style="color:#f92672">,</span> appName<span style="color:#f92672">);</span>
+			<span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span><span style="color:#e6db74">&#34;RECEIPTS&#34;</span><span style="color:#f92672">.</span><span style="color:#a6e22e">equalsIgnoreCase</span><span style="color:#f92672">(</span>appName<span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+				String status <span style="color:#f92672">=</span> mbo<span style="color:#f92672">.</span><span style="color:#a6e22e">getString</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;udStatus&#34;</span><span style="color:#f92672">);</span>
+				<span style="color:#66d9ef">if</span> <span style="color:#f92672">(!</span><span style="color:#e6db74">&#34;APPR&#34;</span><span style="color:#f92672">.</span><span style="color:#a6e22e">equals</span><span style="color:#f92672">(</span>status<span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+					<span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> MXApplicationException<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;receipts&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;statusAppr&#34;</span><span style="color:#f92672">);</span>
+				<span style="color:#f92672">}</span>
+			<span style="color:#f92672">}</span>
+		<span style="color:#f92672">}</span>
+		<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">super</span><span style="color:#f92672">.</span><span style="color:#a6e22e">selorditem</span><span style="color:#f92672">();</span>
+	<span style="color:#f92672">}</span>
+
+<span style="color:#f92672">}</span>
+</code></pre></div><p>Firstly, the recievts line table&rsquo;s <code>add row</code> function is in <code>mbo</code> class, so I need override it&rsquo;s <code>add</code> method. In this method, check the purchase receives status, then inject it&rsquo;s super method.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> hxqh.app.inventory.matrectrans<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.rmi.RemoteException<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> hxqh.app.common.UdAtgUtil<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> psdi.app.inventory.MatRecTrans<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> psdi.app.inventory.MatRecTransRemote<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> psdi.mbo.MboRemote<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> psdi.mbo.MboSet<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> psdi.util.MXApplicationException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> psdi.util.MXException<span style="color:#f92672">;</span>
+
+<span style="color:#75715e">/**
+</span><span style="color:#75715e"> * @moduleApp .: 6.6 采购接收
+</span><span style="color:#75715e"> * @classPath .: hxqh.app.inventory.matrectrans.UdMatRecTrans
+</span><span style="color:#75715e"> * @description: 当用户新建接收行时，判断采购接收的审批状态是否为APPR，如果不是，不允许创建
+</span><span style="color:#75715e"> * 				!!! 此功能暂时用不到，文件保留
+</span><span style="color:#75715e"> * @author ....: WangQk
+</span><span style="color:#75715e"> * @date ......: 2020/12/28
+</span><span style="color:#75715e"> */</span>
+<span style="color:#a6e22e">@Deprecated</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">UdMatRecTrans</span> <span style="color:#66d9ef">extends</span> MatRecTrans <span style="color:#66d9ef">implements</span> MatRecTransRemote <span style="color:#f92672">{</span>
+
+	<span style="color:#66d9ef">public</span> <span style="color:#a6e22e">UdMatRecTrans</span><span style="color:#f92672">(</span>MboSet ms<span style="color:#f92672">)</span> <span style="color:#66d9ef">throws</span> MXException<span style="color:#f92672">,</span> RemoteException <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">super</span><span style="color:#f92672">(</span>ms<span style="color:#f92672">);</span>
+	<span style="color:#f92672">}</span>
+	
+	<span style="color:#a6e22e">@Override</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">add</span><span style="color:#f92672">()</span> <span style="color:#66d9ef">throws</span> MXException<span style="color:#f92672">,</span> RemoteException <span style="color:#f92672">{</span>
+		
+		MboRemote owner <span style="color:#f92672">=</span> getOwner<span style="color:#f92672">();</span>
+		
+		<span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">null</span> <span style="color:#f92672">!=</span> owner<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+			String appName <span style="color:#f92672">=</span> owner<span style="color:#f92672">.</span><span style="color:#a6e22e">getThisMboSet</span><span style="color:#f92672">().</span><span style="color:#a6e22e">getApp</span><span style="color:#f92672">();</span>
+			UdAtgUtil<span style="color:#f92672">.</span><span style="color:#a6e22e">print</span><span style="color:#f92672">(</span>getClass<span style="color:#f92672">(),</span> <span style="color:#e6db74">&#34;add&#34;</span><span style="color:#f92672">,</span> appName<span style="color:#f92672">);</span>
+			<span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span><span style="color:#e6db74">&#34;RECEIPTS&#34;</span><span style="color:#f92672">.</span><span style="color:#a6e22e">equals</span><span style="color:#f92672">(</span>appName<span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+				String status <span style="color:#f92672">=</span> owner<span style="color:#f92672">.</span><span style="color:#a6e22e">getString</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;udStatus&#34;</span><span style="color:#f92672">);</span>
+				<span style="color:#66d9ef">if</span> <span style="color:#f92672">(!</span><span style="color:#e6db74">&#34;APPR&#34;</span><span style="color:#f92672">.</span><span style="color:#a6e22e">equals</span><span style="color:#f92672">(</span>status<span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+					<span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> MXApplicationException<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;receipts&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;statusAppr&#34;</span><span style="color:#f92672">);</span>
+				<span style="color:#f92672">}</span>
+			<span style="color:#f92672">}</span>
+		<span style="color:#f92672">}</span>
+		
+		<span style="color:#66d9ef">super</span><span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">();</span>
+	<span style="color:#f92672">}</span>
+
+<span style="color:#f92672">}</span>
+</code></pre></div><h4 id="delete-item-accounts">Delete Item accounts</h4>
+<p>Usually, users always tole we to delete some material in item accounts application, every item relationships many tables, so do it in datase visuble tools is too tight. Finally, I plan to write a method, then I can do it in applications by click mouse.</p>
+<p>Firstly, I override this method by <code>delete()</code>, in <code>Item.class</code> is no this method,  and it&rsquo;s just have <code>delete(long access)</code>, so program find <code>delete()</code> in <code>Item.class</code> &lsquo;s father class. In <code>Mbo.class</code> have <code>delete()</code> method, so I wrote methos always not work.</p>
+<p>I also override <code>canDelete()</code> method, becase when I delete, I don&rsquo;t need too many limits.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#75715e">/**
+</span><span style="color:#75715e">  * 删除物资台账，及相关表数据
+</span><span style="color:#75715e">  */</span>
+<span style="color:#a6e22e">@Override</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">delete</span><span style="color:#f92672">(</span><span style="color:#66d9ef">long</span> access<span style="color:#f92672">)</span> <span style="color:#66d9ef">throws</span> RemoteException<span style="color:#f92672">,</span> MXException <span style="color:#f92672">{</span>
+    String itemNum <span style="color:#f92672">=</span> getString<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;itemNum&#34;</span><span style="color:#f92672">);</span>
+
+    UdAtgUtil<span style="color:#f92672">.</span><span style="color:#a6e22e">print</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Item delte start: &#34;</span> <span style="color:#f92672">+</span> itemNum<span style="color:#f92672">);</span>
+
+    MboSetRemote itemOrgInfoSet <span style="color:#f92672">=</span> server<span style="color:#f92672">.</span><span style="color:#a6e22e">getMboSet</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;ITEMORGINFO&#34;</span><span style="color:#f92672">,</span> server<span style="color:#f92672">.</span><span style="color:#a6e22e">getSystemUserInfo</span><span style="color:#f92672">());</span>
+    itemOrgInfoSet<span style="color:#f92672">.</span><span style="color:#a6e22e">setWhere</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;itemNum=&#39;&#34;</span> <span style="color:#f92672">+</span> itemNum <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;&#39;&#34;</span><span style="color:#f92672">);</span>
+    itemOrgInfoSet<span style="color:#f92672">.</span><span style="color:#a6e22e">reset</span><span style="color:#f92672">();</span>
+    System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;itemOrgInfoSet.count()&#34;</span> <span style="color:#f92672">+</span> itemOrgInfoSet<span style="color:#f92672">.</span><span style="color:#a6e22e">count</span><span style="color:#f92672">());</span>
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">null</span> <span style="color:#f92672">!=</span> itemOrgInfoSet<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        itemOrgInfoSet<span style="color:#f92672">.</span><span style="color:#a6e22e">deleteAll</span><span style="color:#f92672">(</span>11L<span style="color:#f92672">);</span>
+        itemOrgInfoSet<span style="color:#f92672">.</span><span style="color:#a6e22e">save</span><span style="color:#f92672">();</span>
+    <span style="color:#f92672">}</span>
+    itemOrgInfoSet<span style="color:#f92672">.</span><span style="color:#a6e22e">close</span><span style="color:#f92672">();</span>
+
+    MboSetRemote itemOrgStatusoSet <span style="color:#f92672">=</span> server<span style="color:#f92672">.</span><span style="color:#a6e22e">getMboSet</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;ITEMORGSTATUS&#34;</span><span style="color:#f92672">,</span> server<span style="color:#f92672">.</span><span style="color:#a6e22e">getSystemUserInfo</span><span style="color:#f92672">());</span>
+    itemOrgStatusoSet<span style="color:#f92672">.</span><span style="color:#a6e22e">setWhere</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;itemNum=&#39;&#34;</span> <span style="color:#f92672">+</span> itemNum <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;&#39;&#34;</span><span style="color:#f92672">);</span>
+    itemOrgStatusoSet<span style="color:#f92672">.</span><span style="color:#a6e22e">reset</span><span style="color:#f92672">();</span>
+    System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;itemOrgStatusoSet.count()&#34;</span> <span style="color:#f92672">+</span> itemOrgStatusoSet<span style="color:#f92672">.</span><span style="color:#a6e22e">count</span><span style="color:#f92672">());</span>
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">null</span> <span style="color:#f92672">!=</span> itemOrgStatusoSet<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        itemOrgStatusoSet<span style="color:#f92672">.</span><span style="color:#a6e22e">deleteAll</span><span style="color:#f92672">(</span>11L<span style="color:#f92672">);</span>
+        itemOrgStatusoSet<span style="color:#f92672">.</span><span style="color:#a6e22e">save</span><span style="color:#f92672">();</span>
+    <span style="color:#f92672">}</span>
+    itemOrgStatusoSet<span style="color:#f92672">.</span><span style="color:#a6e22e">close</span><span style="color:#f92672">();</span>
+
+    MboSetRemote itemStatusoSet <span style="color:#f92672">=</span> server<span style="color:#f92672">.</span><span style="color:#a6e22e">getMboSet</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;ITEMSTATUS&#34;</span><span style="color:#f92672">,</span> server<span style="color:#f92672">.</span><span style="color:#a6e22e">getSystemUserInfo</span><span style="color:#f92672">());</span>
+    itemStatusoSet<span style="color:#f92672">.</span><span style="color:#a6e22e">setWhere</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;itemNum=&#39;&#34;</span> <span style="color:#f92672">+</span> itemNum <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;&#39;&#34;</span><span style="color:#f92672">);</span>
+    itemStatusoSet<span style="color:#f92672">.</span><span style="color:#a6e22e">reset</span><span style="color:#f92672">();</span>
+    System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;itemStatusoSet.count()&#34;</span> <span style="color:#f92672">+</span> itemStatusoSet<span style="color:#f92672">.</span><span style="color:#a6e22e">count</span><span style="color:#f92672">());</span>
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">null</span> <span style="color:#f92672">!=</span> itemStatusoSet<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        itemStatusoSet<span style="color:#f92672">.</span><span style="color:#a6e22e">deleteAll</span><span style="color:#f92672">(</span>11L<span style="color:#f92672">);</span>
+        itemStatusoSet<span style="color:#f92672">.</span><span style="color:#a6e22e">save</span><span style="color:#f92672">();</span>
+    <span style="color:#f92672">}</span>
+    itemStatusoSet<span style="color:#f92672">.</span><span style="color:#a6e22e">close</span><span style="color:#f92672">();</span>
+
+    <span style="color:#66d9ef">super</span><span style="color:#f92672">.</span><span style="color:#a6e22e">delete</span><span style="color:#f92672">(</span>access<span style="color:#f92672">);</span>
+
+    UdAtgUtil<span style="color:#f92672">.</span><span style="color:#a6e22e">print</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Item delte success: &#34;</span> <span style="color:#f92672">+</span> itemNum<span style="color:#f92672">);</span>
+<span style="color:#f92672">}</span>
+
+<span style="color:#75715e">/**
+</span><span style="color:#75715e">  * 屏蔽父类方法的一些业务验证
+</span><span style="color:#75715e">  */</span>
+<span style="color:#a6e22e">@Override</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">canDelete</span><span style="color:#f92672">()</span> <span style="color:#66d9ef">throws</span> MXException<span style="color:#f92672">,</span> RemoteException <span style="color:#f92672">{}</span>
+	
+</code></pre></div>
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/maximo/" rel="tag">maximo</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="清明自躬 avatar" src="/img/avatar.png" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About 清明自躬</span>
+	</div>
+	<div class="authorbox__description">
+		Just me John Doe&rsquo;s true identity is unknown. Maybe he is a successful blogger or writer. Nobody knows it.
+	</div>
+</div>
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/post/tmux/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">Tmux</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<label>
+			<input class="widget-search__field" type="search" placeholder="SEARCH…" value="" name="q" aria-label="SEARCH…">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="/" />
+	</form>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/maximo-over-method-record/">Maximo Over Method Record</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/tmux/">Tmux</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/common-linux-command/">Common Linux Command</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/how-to-earn-money/">How to Earn Money</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/learn-crawlers-record/">Learn Crawlers Record</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/development/">Development</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/golang/">golang</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/java/">Java</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/linux/">Linux</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/self/">Self</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/sql/">SQL</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/thinking/">Thinking</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/tools/">Tools</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/basic-elements/" title="Basic Elements">Basic Elements (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/command/" title="command">command (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/crawlers/" title="Crawlers">Crawlers (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/css/" title="CSS">CSS (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/development/" title="development">development (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/finance/" title="finance">finance (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/git/" title="git">git (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/go/" title="go">go (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/golang/" title="golang">golang (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/html/" title="HTML">HTML (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="hugo">hugo (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/maximo/" title="maximo">maximo (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/oracle/" title="oracle">oracle (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/read/" title="read">read (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/templates/" title="templates">templates (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/themes/" title="themes">themes (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/thindking/" title="thindking">thindking (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/work/" title="work">work (1)</a>
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2020 清明自躬.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

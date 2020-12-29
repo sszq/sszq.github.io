@@ -12,6 +12,17 @@
     
     
     <item>
+      <title>Maximo Over Method Record</title>
+      <link>/post/maximo-over-method-record/</link>
+      <pubDate>Tue, 29 Dec 2020 12:28:46 +0500</pubDate>
+      
+      <guid>/post/maximo-over-method-record/</guid>
+      <description>Recently, I statill develop in current project, I selved sevrial issue about override method. I plan to record them now.
+ Purchase receives In purchase receives application, user can new, receive, return material. In bussiness, user can do these actions only on the purchase approve status is APPR, so if the status is not APPR, when user do that, throuth system notice user can&amp;rsquo;t do that.
+Firstly, the recievts line table binding a table class, and the receive, return action is in this method, now I can create a new class and override the two method.</description>
+    </item>
+    
+    <item>
       <title>Tmux</title>
       <link>/post/tmux/</link>
       <pubDate>Mon, 14 Dec 2020 09:55:07 +0500</pubDate>
